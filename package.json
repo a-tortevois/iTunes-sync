@@ -1,0 +1,28 @@
+{
+  "name": "itunes-sync",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./src/index.js",
+  "scripts": {
+    "start:checkITunesMusicLibrary": "node ./src/checkITunesMusicLibrary.js",
+    "start:sanitizePath": "node ./src/sanitizePath.js",
+    "start:syncLibraries": "node ./src/syncLibraries.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:check": "prettier --check ./src",
+    "format:write": "prettier --write ./src",
+    "lint:check": "eslint --ext .ts ./src/**",
+    "lint:fix": "eslint --ext .ts ./src/** --fix"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.2.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
